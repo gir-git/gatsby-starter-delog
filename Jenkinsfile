@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Stage 1: Git Pull') {
-            steps {
-                echo 'going to pull code from github repo '
-                sh 'git pull'
-            }
-        }
+        //stage('Stage 1: Git Pull') {
+          //  steps {
+          //      echo 'going to pull code from github repo '
+          //      sh 'git pull'
+          //  }
+        //}
         
         stage('Stage 2: Build') {
             steps {
