@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    tools {nodejs "node"}
+    tools {nodejs "Nodejs 20.3.1"}
 
     stages {
         //stage('Stage 1: Git Pull') {
