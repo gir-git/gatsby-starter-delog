@@ -14,7 +14,7 @@ pipeline {
         stage('Stage 2: Build') {
             steps {
                 echo 'running "npm install && npm run build"'
-                    sh 'npm config ls'
+                    //sh 'npm config ls'
                     sh 'npm install'
                     sh 'npm run build'
             }
