@@ -1,6 +1,8 @@
 pipeline {
     agent any
 
+    tools {nodejs "node"}
+
     stages {
         //stage('Stage 1: Git Pull') {
           //  steps {
@@ -12,11 +14,9 @@ pipeline {
         stage('Stage 2: Build') {
             steps {
                 echo 'running "npm install && npm run build"'
-                nodejs(nodeJSInstallationName: 'Nodejs 20.3.1') {
                     sh 'npm config ls'
                     sh 'npm install'
                     sh 'npm run build'
-                }
             }
         }
         
